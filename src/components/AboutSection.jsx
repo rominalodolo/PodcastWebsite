@@ -10,7 +10,7 @@ export function AboutSection(props) {
 
   return (
     <section {...props}>
-      <h2 className="flex items-center font-mono text-sm/7 font-medium text-slate-900">
+      <h2 className="flex items-center font-mono text-sm/7 font-medium text-seasalt">
         <TinyWaveFormIcon
           colors={['fill-violet-300', 'fill-pink-300']}
           className="h-2.5 w-2.5"
@@ -19,20 +19,16 @@ export function AboutSection(props) {
       </h2>
       <p
         className={clsx(
-          'mt-2 text-base/7 text-slate-700',
+          'mt-2 text-base/7 text-seasalt',
           !isExpanded && 'lg:line-clamp-4',
         )}
       >
-        In this show, Eric and Wes dig deep to get to the facts with guests who
-        have been labeled villains by a society quick to judge, without actually
-        getting the full story. Tune in every Thursday to get to the truth with
-        another misunderstood outcast as they share the missing context in their
-        tragic tale.
+        Three dev girls share the hilarious, weird, and sometimes, a bit chaotic, side of life behind the code. From merge conflicts to coffee-fueled hotfixes, we tell the stories, bugs, and chaos you never knew were happening on the other side of the stack.
       </p>
       {!isExpanded && (
         <button
           type="button"
-          className="mt-2 hidden text-sm/6 font-bold text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block"
+          className="mt-2 hidden text-sm/6 font-bold text-hotpink hover:text-pink-700 active:text-pink-900 lg:inline-block"
           onClick={() => setIsExpanded(true)}
         >
           Show more

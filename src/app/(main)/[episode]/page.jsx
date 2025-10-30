@@ -40,7 +40,7 @@ export default async function Episode({ params }) {
           <div className="flex items-center gap-6">
             <EpisodePlayButton
               episode={episode}
-              className="group relative flex h-18 w-18 shrink-0 items-center justify-center rounded-full bg-slate-700 hover:bg-slate-900 focus:ring-3 focus:ring-slate-700 focus:ring-offset-4 focus:outline-hidden"
+              className="group relative flex h-18 w-18 shrink-0 items-center justify-center rounded-full bg-night hover:bg-night focus:ring-3 focus:ring-slate-700 focus:ring-offset-4 focus:outline-hidden"
               playing={
                 <PauseIcon className="h-9 w-9 fill-white group-active:fill-white/80" />
               }

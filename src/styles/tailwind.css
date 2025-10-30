@@ -6,4 +6,8 @@
   --font-sans:
     Satoshi, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --color-night: #0D0D0D;
+  --color-hotpink: #FF69B4;
+  --color-turquoise: #00E0C6;
+  --color-seasalt: #F9F9F9;
 }

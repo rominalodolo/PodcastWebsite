@@ -93,7 +93,7 @@ export function PlaybackRateButton({ player }) {
   return (
     <button
       type="button"
-      className="relative flex h-6 w-6 items-center justify-center rounded-md text-slate-500 hover:bg-slate-100 hover:text-slate-700 focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:outline-hidden"
+      className="relative flex h-6 w-6 items-center justify-center rounded-md text-seasalt hover:bg-slate-100 hover:text-gray-200 focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:outline-hidden"
       onClick={() => {
         setPlaybackRate((rate) => {
           let existingIdx = playbackRates.indexOf(rate)

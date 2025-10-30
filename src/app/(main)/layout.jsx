@@ -58,18 +58,18 @@ function PersonIcon(props) {
 }
 
 export default function MainLayout({ children }) {
-  let hosts = ['Eric Gordon', 'Wes Mantooth']
+  let hosts = ['Dev Girl 1', 'Dev Girl 2', 'Dev Girl 3']
 
   return (
     <AudioProvider>
-      <header className="bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-md lg:items-start lg:overflow-y-auto xl:w-120">
+      <header className="bg-night lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-md lg:items-start lg:overflow-y-auto xl:w-120">
         <div className="hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:px-12 lg:text-sm/7 lg:whitespace-nowrap lg:[writing-mode:vertical-rl]">
-          <span className="font-mono text-slate-500">Hosted by</span>
-          <span className="mt-6 flex gap-6 font-bold text-slate-900">
+          <span className="font-mono text-turquoise">Hosted by</span>
+          <span className="mt-6 flex gap-6 font-bold text-gray-400">
             {hosts.map((host, hostIndex) => (
               <Fragment key={host}>
                 {hostIndex !== 0 && (
-                  <span aria-hidden="true" className="text-slate-400">
+                  <span aria-hidden="true" className="text-gray-400">
                     /
                   </span>
                 )}
@@ -81,7 +81,7 @@ export default function MainLayout({ children }) {
         <div className="relative z-10 mx-auto px-4 pt-10 pb-4 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:px-8 lg:py-12 xl:px-12">
           <Link
             href="/"
-            className="relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl"
+            className="relative mx-auto block w-48 overflow-hidden rounded-lg bg-turquoise shadow-xl shadow-hotpink sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl"
             aria-label="Homepage"
           >
             <Image
@@ -94,17 +94,16 @@ export default function MainLayout({ children }) {
             <div className="absolute inset-0 rounded-lg ring-1 ring-black/10 ring-inset sm:rounded-xl lg:rounded-2xl" />
           </Link>
           <div className="mt-10 text-center lg:mt-12 lg:text-left">
-            <p className="text-xl font-bold text-slate-900">
-              <Link href="/">Their Side</Link>
+            <p className="text-xl font-bold text-seasalt">
+              <Link href="/">Merge Conflicts & Life Hotfixes</Link>
             </p>
-            <p className="mt-3 text-lg/8 font-medium text-slate-700">
-              Conversations with the most tragically misunderstood people of our
-              time.
+            <p className="mt-3 text-lg/8 font-medium text-seasalt">
+            Stories from the Other Side of the Stack.       
             </p>
           </div>
           <AboutSection className="mt-12 hidden lg:block" />
           <section className="mt-10 lg:mt-12">
-            <h2 className="sr-only flex items-center font-mono text-sm/7 font-medium text-slate-900 lg:not-sr-only">
+            <h2 className="sr-only flex items-center font-mono text-sm/7 font-medium text-seasalt lg:not-sr-only">
               <TinyWaveFormIcon
                 colors={['fill-indigo-300', 'fill-blue-300']}
                 className="h-2.5 w-2.5"
@@ -114,7 +113,7 @@ export default function MainLayout({ children }) {
             <div className="h-px bg-linear-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden" />
             <ul
               role="list"
-              className="mt-4 flex justify-center gap-10 text-base/7 font-medium text-slate-700 sm:gap-8 lg:flex-col lg:gap-4"
+              className="mt-4 flex justify-center gap-10 text-base/7 font-medium text-seasalt sm:gap-8 lg:flex-col lg:gap-4"
             >
               {[
                 ['Spotify', SpotifyIcon],

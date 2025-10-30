@@ -2,17 +2,17 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Their Side',
+    template: '%s - Merge Conflicts & Life Hotfixes',
     default:
-      'Their Side - Conversations with the most tragically misunderstood people of our time',
+      'Merge Conflicts & Life Hotfixes - Stories from the Other Side of the Stack',
   },
   description:
-    'Conversations with the most tragically misunderstood people of our time.',
+    'Stories from the Other Side of the Stack.',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full bg-white antialiased">
+    <html lang="en" className="h-full bg-night antialiased">
       <head>
         <link
           rel="preconnect"
